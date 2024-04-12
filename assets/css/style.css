@@ -1,0 +1,312 @@
+:root {
+  --green-light: #009E66;
+  --grey-light: #9F9F9F;
+  --extra-dark: #0c0e10;
+  --font: "Poppins", sans-serif;
+  --border-bottom: #313131;
+  --form-input: #161616;
+}
+
+body {
+  font-family: var(--font);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--bs-secondary) !important;
+}
+
+.bg-extra-dark {
+  background-color: var(--extra-dark) !important;
+}
+
+.bg-form {
+  background-color: var(--form-input) !important;
+}
+
+.font-p {
+  font-style: var(--font) !important;
+}
+
+.border-bottom-s {
+  border-bottom: 0.5px solid var(--border-bottom) !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+}
+
+/* Header Start */
+.logo {
+  width: 8%;
+}
+
+/* Header End */
+/* Main-Banner Start */
+#changingText {
+  border-right: 1px solid black;
+  animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+  50% {
+    border-right: 1px solid rgba(0, 0, 0, 0);
+  }
+}
+
+.main-banner h4 {
+  letter-spacing: 2px;
+}
+
+/* Main-Banner End */
+/* About Start */
+.about {
+  transition: all 0.3s linear;
+}
+
+.about::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.about::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-900);
+  width: 10px;
+  border-radius: 50px;
+}
+
+.about::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px;
+}
+
+.about .col-7 div {
+  border-bottom: var(--green-light);
+}
+
+.about .col-7 h3 {
+  color: var(--green-light)
+}
+
+.img-me {
+  background-image: url(../img/info-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-list li {
+  transition: all 0.3s linear;
+}
+
+.about-list::before {
+  background-color: rgba(255, 255, 255, .25);
+  content: '';
+  height: 2px;
+  margin-right: 23px;
+  width: 60px;
+}
+
+.about-list li:hover {
+  color: var(--bs-success);
+}
+
+.card-s {
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.card:hover .card-s {
+  background-color: var(--bs-success) !important;
+}
+
+#testimonials img,
+#testimonials i {
+  height: 54px;
+  width: 54px;
+}
+
+#testimonials h6 {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+#testimonials p {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+#testimonials span {
+  font-size: 14px !important;
+}
+
+/* About End */
+/* Resume Start */
+.r-bookmark {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+.r-right {
+  font-size: 32px !important;
+  position: absolute;
+  top: 2.5%;
+  left: .3%;
+}
+
+.resume::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.resume::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-900);
+  width: 10px;
+  border-radius: 50px;
+}
+
+.resume::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px;
+}
+
+.resume-content p,
+.resume-content span {
+  font-size: 15px !important;
+  color: var(--bs-secondary-text-emphasis);
+}
+
+.video {
+  background-image: url(../img/video.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 100%;
+}
+
+.video div {
+  top: 28%;
+  right: 45%;
+}
+
+/* Resume End */
+/* Portfolio Start */
+.portfolio::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.portfolio::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-900);
+  width: 10px;
+  border-radius: 50px;
+}
+
+.portfolio::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px;
+}
+
+.project-hover {
+  background-color: rgba(0, 0, 0, 0.519);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.project-hover:hover {
+  opacity: 1;
+}
+
+/* Portfolio End */
+/* Blog Start */
+.blog::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.blog::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-900);
+  width: 10px;
+  border-radius: 50px;
+}
+
+.blog::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px;
+}
+
+/* Blog End */
+/* Contact Start */
+.contact::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.contact::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-900);
+  width: 10px;
+  border-radius: 50px;
+}
+
+.contact::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px;
+}
+
+/* Cotact End */
+/* Particle JS */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #19191f;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Popppins Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Style CSS -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Particle JS -->
+    <div class="position-absolute top-0 right-0 vh-100 w-100 bg-black z-n1 " id="particles-js"></div>
+    <!-- Header Start -->
+    <header
+        class="d-flex flex-wrap justify-content-between px-2 py-3 px-lg-5 py-lg-4 position-fixed top-0 left-0 w-100 z-3">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo" class="w-100 h-100">
+        </div>
+        <div class="d-lg-none d-block dropdown">
+            <iconify-icon icon="fluent:list-16-filled" class="fs-3 text-light" data-bs-toggle="dropdown"></iconify-icon>
+            <ul class="dropdown-menu bg-black">
+                <li class="nav-item"><button class="dropdown-item btn border-0 text-secondary font-p"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-about">About</button></li>
+                <li class="nav-item"><button class="dropdown-item btn border-0 text-secondary font-p"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-resume">Resume</button></li>
+                <li class="nav-item"><button class="dropdown-item btn border-0 text-secondary font-p"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-portfolio">Portfolio</button></li>
+                <li class="nav-item"><button class="dropdown-item btn border-0 text-secondary font-p"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-blog">Blog</button></li>
+                <li class="nav-item"><button class="dropdown-item btn border-0 text-secondary font-p"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-contact">Contact</button></li>
+            </ul>
+        </div>
+        <div class="d-lg-block d-none">
+            <ul class="list-unstyled d-flex flex-wrap align-items-center mb-0 ">
+                <li class="nav-item"><button class="btn border-0 text-light font-p" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-about">About</button></li>
+                <li class="nav-item"><button class="btn border-0 text-light font-p" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-resume">Resume</button></li>
+                <li class="nav-item"><button class="btn border-0 text-light font-p" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-portfolio">Portfolio</button></li>
+                <li class="nav-item"><button class="btn border-0 text-light font-p" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-blog">Blog</button></li>
+                <li class="nav-item"><button class="btn border-0 text-light font-p" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-contact">Contact</button></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Main-Banner Start -->
+    <section class=" main-banner text-light d-flex flex-wrap justify-content-center align-items-center vh-100
+    position-relative z-1 w-100 text-center">
+        <div>
+            <div class=" pb-5 mb-5">
+                <h1 class="pb-3 display-2 fw-bold">Vrushank Gotawala</h1>
+                <h4 class="w-100 d-flex flex-wrap justify-content-center align-items-center fw-normal">I'm a&nbsp;<span
+                        id="changingText"></span></h4>
+            </div>
+            <div>
+                <ul class="list-unstyled position-fixed bottom-0 end-0 d-md-block d-none">
+                    <li class="me-5 pb-2 fs-5"><a><iconify-icon icon="mdi:twitter"></iconify-icon></a></li>
+                    <li class="me-5 pb-2 fs-5"><a><iconify-icon icon="uiw:facebook"></iconify-icon></a></li>
+                    <li class="me-5 pb-2 fs-5"><a><iconify-icon icon="bi:linkedin"></iconify-icon></a></li>
+                    <li class="me-5 pb-2 fs-5"><a><iconify-icon icon="mdi:github"></iconify-icon></a></li>
+                    <li class="me-5 pb-2 fs-5"><a><iconify-icon icon="mdi:instagram"></iconify-icon></a></li>
+                </ul>
+            </div>
+    </section>
+    <!-- Main-Banner End -->
+    <!-- About Start -->
+    <section class="about offcanvas offcanvas-bottom vh-100 bg-black overflow-y-scroll " id="offcanvas-about"
+        data-bs-theme="dark">
+        <div class="container">
+            <div class="offcanvas-header position-fixed top-0 end-0">
+                <button type="button" class="btn-close fs-3 me-5 mt-4" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="text-center mt-5 mb-5">
+                <span class="fs-6 text-secondary-emphasis ">Get to know me</span>
+                <h2 class="fs-1 fw-bold pt-3">About Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="img-me pe-3 overflow-hidden h-100"></div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="pt-2 border-bottom">
+                        <h3 class="h3 mb-3 ">Who Am I?</h3>
+                        <p class="mb-4 h1 fw-semibold ">I'm Vrushank Gotawala, a Full Stack Developer</p>
+                        <p class="pb-4 text-secondary-emphasis ">
+                            I am a freelancer based in the United Kingdom and i have been building noteworthy UX/UI
+                            designs
+                            and websites for years, which comply with the latest design trends. I help convert a
+                            vision
+                            and
+                            an idea into meaningful and useful products. Having a sharp eye for product evolution
+                            helps
+                            me
+                            prioritize tasks, iterate fast and deliver faster.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="d-flex f-wrap mt-3">
+                                <span>Name: </span>
+                                <p class="ms-2 text-secondary-emphasis ">Vrushank Gotawala</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex f-wrap mt-3">
+                                <span>Email: </span>
+                                <p class="ms-2 text-success  ">vrushankgotawala@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex f-wrap">
+                                <span>Age: </span>
+                                <p class="ms-2 text-secondary-emphasis ">19</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex f-wrap">
+                                <span>From: </span>
+                                <p class="ms-2 text-secondary-emphasis ">Surat, India</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-center ">
+                                <button class="btn btn-success rounded-pill fs-md-6 px-4 py-2 mt-2">Download
+                                    CV</button>
+                                <div>
+                                    <ul
+                                        class="about-list list-unstyled d-flex f-wrap align-items-center mb-0 ms-5 mt-2 text-secondary-emphasis ">
+                                        <li class="me-3 fs-4"><a><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+                                        </li>
+                                        <li class="me-3 fs-5"><a><iconify-icon icon="uiw:facebook"></iconify-icon></a>
+                                        </li>
+                                        <li class="me-3 fs-5"><a><iconify-icon icon="bi:linkedin"></iconify-icon></a>
+                                        </li>
+                                        <li class="me-3 fs-4"><a><iconify-icon icon="mdi:github"></iconify-icon></a>
+                                        </li>
+                                        <li class="me-3 fs-4"><a><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mt-5 pt-5 mb-5 w-100 text-lg-start text-center">
+                <span class="fs-6 text-secondary-emphasis">Services I Offer To My Clients</span>
+                <h2 class="fs-1 fw-semibold pt-3">My Services</h2>
+            </div>
+            <div class="services-card">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="devicon-plain:html5"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">Design Trends</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="tabler:library-photo"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">FSD Design</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="cib:ionic"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">Customer Support</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-md-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="brandico:wordpress"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">Web Development</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-md-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="bx:move"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">Full Responsive</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 mb-md-0 mb-4 overflow-hidden ">
+                            <div class="bg-extra-dark rounded-1 shadow border-0 p-4">
+                                <div class="card-title text-success display-4 ms-2 mt-3 mb-3">
+                                    <iconify-icon icon="ion:rocket-sharp"></iconify-icon>
+                                </div>
+                                <div class="card-body p-2">
+                                    <h5 class="card-title h4 fw-semibold text-light mb-3">Branding</h5>
+                                    <p class="card-text text-secondary-emphasis">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing
+                                        elit.</p>
+                                </div>
+                            </div>
+                            <div class="card-s w-100 bg-extra-dark"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mt-5 pt-5 mb-5 w-100 text-lg-start text-center">
+                <span class="fs-6 text-secondary-emphasis ">What my clients think about me</span>
+                <h2 class="fs-1 fw-semibold pt-3">Testimonials</h2>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center mb-5 pb-5">
+                <div class="carousel slide w-100 mx-auto " id="testimonials">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonials" data-bs-slide-to="0"
+                            class="active bg-secondary " aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#testimonials" data-bs-slide-to="1" aria-label="Slide 2"
+                            class="bg-secondary"></button>
+                        <button type="button" data-bs-target="#testimonials" data-bs-slide-to="2" aria-label="Slide 3"
+                            class="bg-secondary"></button>
+                        <button type="button" data-bs-target="#testimonials" data-bs-slide-to="3" aria-label="Slide 4"
+                            class="bg-secondary"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="w-75 mx-auto">
+                            <div class="carousel-item active ">
+                                <div class="card border-0 bg-extra-dark p-4">
+                                    <div class="card-title px-3">
+                                        <div class="d-flex f-wrap justify-content-between align-items-center ">
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <img src="assets/img/client-1.jpg" alt="client 1"
+                                                    class="rounded-circle">
+                                                <div class="ms-3">
+                                                    <h6 class="fs-6 mb-0">Julia Sakura</h6>
+                                                    <span class="text-secondary-emphasis fs-6">Envato
+                                                        Customer</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-quote-right fs-1 pt-2 text-success"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-secondary-emphasis">
+                                            Vrushank did an excellent creative job, addressing our request quickly,
+                                            and
+                                            also providing her own graphic insight, being open to feedback and
+                                            changes
+                                            or edits when they arose. She worked with us the entire way. Highly
+                                            recommended.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 bg-extra-dark p-4">
+                                    <div class="card-title px-3">
+                                        <div class="d-flex f-wrap justify-content-between align-items-center ">
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <img src="assets/img/client-2.jpg" alt="client 1"
+                                                    class="rounded-circle">
+                                                <div class="ms-3">
+                                                    <h6 class="fs-6 mb-0">John Santana</h6>
+                                                    <span class="text-secondary-emphasis fs-6">Enterprenure</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-quote-right fs-1 pt-2 text-success"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-secondary-emphasis">
+                                            Vrushank did an excellent creative job, addressing our request quickly,
+                                            and
+                                            also providing her own graphic insight, being open to feedback and
+                                            changes
+                                            or edits when they arose. She worked with us the entire way. Highly
+                                            recommended.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 bg-extra-dark p-4">
+                                    <div class="card-title px-3">
+                                        <div class="d-flex f-wrap justify-content-between align-items-center ">
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <img src="assets/img/client-3.jpg" alt="client 1"
+                                                    class="rounded-circle">
+                                                <div class="ms-3">
+                                                    <h6 class="fs-6 mb-0">Maria Wilson</h6>
+                                                    <span class="text-secondary-emphasis fs-6">Envato
+                                                        Customer</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-quote-right fs-1 pt-2 text-success"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-secondary-emphasis">
+                                            Vrushank did an excellent creative job, addressing our request quickly,
+                                            and
+                                            also providing her own graphic insight, being open to feedback and
+                                            changes
+                                            or edits when they arose. She worked with us the entire way. Highly
+                                            recommended.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 bg-extra-dark p-4">
+                                    <div class="card-title px-3">
+                                        <div class="d-flex f-wrap justify-content-between align-items-center ">
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <img src="assets/img/client-1.jpg" alt="client 1"
+                                                    class="rounded-circle">
+                                                <div class="ms-3">
+                                                    <h6 class="fs-6 mb-0">Julia Sakura</h6>
+                                                    <span class="text-secondary-emphasis fs-6">Enterprenure</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-quote-right fs-1 pt-2 text-success"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-secondary-emphasis">
+                                            Vrushank did an excellent creative job, addressing our request quickly,
+                                            and
+                                            also providing her own graphic insight, being open to feedback and
+                                            changes
+                                            or edits when they arose. She worked with us the entire way. Highly
+                                            recommended.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+    <!-- Resume Start -->
+    <section class="resume offcanvas offcanvas-bottom vh-100 bg-black overflow-y-scroll" id="offcanvas-resume"
+        data-bs-theme="dark">
+        <div class="container">
+            <div class="offcanvas-header position-fixed top-0 end-0">
+                <button type="button" class="btn-close fs-3 me-5 mt-4" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="text-center mt-5 mb-5">
+                <span class="fs-6 text-secondary-emphasis ">Check Out My Resume</span>
+                <h2 class="fs-1 fw-bold pt-3">Resume</h2>
+            </div>
+            <div class="row resume-content">
+                <div class="col-lg-6">
+                    <h3>Education</h3>
+                    <div
+                        class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success border-bottom-s me-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>Computer Science</h5>
+                            <span>Cambridge University / 2004 - 2007</span>
+                            <p class="mb-0 ">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success border-bottom-s me-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>Bachelor Degree</h5>
+                            <span>University of Tokyo / 2008 - 2010</span>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success me-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>Master Degree</h5>
+                            <span>Harvard University / 2012 - 2015</span>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Experiance</h3>
+                    <div
+                        class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success border-bottom-s ms-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>Software Engineer</h5>
+                            <span>Adobe / 2015 - 2017</span>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success border-bottom-s ms-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>Back-End Developer</h5>
+                            <span>Google / 2017 - 2018</span>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="position-relative p-5 py-4 bg-extra-dark border-start border-2  border-success ms-lg-3">
+                        <div class="r-bookmark bg-success"></div>
+                        <div class="r-right text-success">
+                            <iconify-icon icon="eva:arrow-right-fill"></iconify-icon>
+                        </div>
+                        <div>
+                            <h5>UI/UX Designer</h5>
+                            <span>Discord / 2019 - Present</span>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mt-5 pt-5 mb-5 w-100 text-lg-start text-center">
+                <span class="fs-6 text-secondary-emphasis ">My level of knowledge in some tools</span>
+                <h2 class="fs-1 fw-semibold pt-3">My Skills</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="me-lg-3">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="me-lg-3 mt-5">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>Web Design</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="me-lg-3 mt-5">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ms-lg-3 mt-lg-0 mt-5">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>React JS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="ms-lg-3 mt-5">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>Express.js</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="ms-lg-3 mt-5">
+                        <div class="d-flex f-wrap justify-content-between me-3 ms-2">
+                            <span>TypeScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress rounded-0" style="height: 10px;">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 pt-5">
+                    <div class="col-lg-6">
+
+                        <h3 class="h2 mb-3 fw-semibold">Take a tour of my office</h3>
+                        <p class="text-secondary-emphasis fw-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum quasi assumenda culpa
+                            praesentium consectetur voluptatibus expedita. Voluptatem tempore, aspernatur rem
+                            facilis,
+                            distinctio nemo! Odio velit, nemo dolorem voluptas!
+                        </p>
+                        <p class="text-secondary-emphasis fw-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui aspernatur unde
+                            mollitia, in laborum.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video position-relative">
+                            <a href="https://youtu.be/QdBZY2fkU-0?si=ETzRxtSMl52oHJJ9" target="_blank">
+                                <div class="position-absolute">
+                                    <div class="play-btn rounded-circle bg-light p-2 px-3 pt-3 text-dark fs-2">
+                                        <iconify-icon icon="mdi:play"></iconify-icon>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Resume End -->
+    <!-- Portfolio Start -->
+    <section class="portfolio offcanvas offcanvas-bottom vh-100 bg-black overflow-y-scroll" id="offcanvas-portfolio"
+        data-bs-theme="dark">
+        <div class="container">
+            <div class="offcanvas-header position-fixed top-0 end-0">
+                <button type="button" class="btn-close fs-3 me-5 mt-4" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="text-center mt-5 mb-5">
+                <span class="fs-6 text-secondary-emphasis ">Showcasing Some Of My Best Works</span>
+                <h2 class="fs-1 fw-bold pt-3">Portfolio</h2>
+            </div>
+            <div class="mb-5">
+                <div class="position-relative overflow-hidden rounded-2 project">
+                    <img src="assets/img/project-1.png" alt="project-1" class="img-fluid ">
+                    <div
+                        class="position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-wrap justify-content-center align-content-center project-hover">
+                        <div class="text-center">
+                            <h6>Fronter Business Website With HTML And CSS</h6>
+                            <span><a href="https://vrushank2808.github.io/Fronter-live-Page/"
+                                    class="text-success font-14">View live</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="position-relative overflow-hidden rounded-2 project">
+                    <img src="assets/img/project-2.png" alt="project-2" class="img-fluid ">
+                    <div
+                        class="position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-wrap justify-content-center align-content-center project-hover">
+                        <div class="text-center">
+                            <h6>W3CRM Adimn Panel</h6>
+                            <span><a href="https://vrushank2808.github.io/W3CRM-Admin-Panel/"
+                                    class="text-success font-14">View live</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="position-relative overflow-hidden rounded-2 project">
+                    <img src="assets/img/project-3.png" alt="project-3" class="img-fluid ">
+                    <div
+                        class="position-absolute bottom-0 start-0 w-100 h-100 d-flex flex-wrap justify-content-center align-content-center project-hover">
+                        <div class="text-center">
+                            <h6>E-Commmerce</h6>
+                            <span><a href="https://vrushank2808.github.io/Ecommerce-Web/"
+                                    class="text-success font-14">View live</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
+    <!-- Blogs Start -->
+    <section class="blog offcanvas offcanvas-bottom vh-100 bg-black overflow-y-scroll" id="offcanvas-blog"
+        data-bs-theme="dark">
+        <div class="container">
+            <div class="offcanvas-header position-fixed top-0 end-0">
+                <button type="button" class="btn-close fs-3 me-5 mt-4" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="text-center mt-5 mb-5">
+                <span class="fs-6 text-secondary-emphasis ">Check Out My Latest Blog Posts</span>
+                <h2 class="fs-1 fw-bold pt-3">My Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-1.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">11 Dec, 20</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>Top tools for Programmers</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-2.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">12 Aug, 20</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>Take a tour of my office</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-3.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">4 Feb, 20</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>How to become a Web Designer</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-4.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">11 Dec, 19</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>How to improve work performance</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-5.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">15 Nov, 19</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>How to work from home</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/img/post-6.jpg" alt="post" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 bg-success p-1 fs-6">
+                            <span class="font-14">8 Aug, 19</span>
+                        </div>
+                    </div>
+                    <div class="pt-3 mb-5 pb-4">
+                        <h5>How to enjoy a business trip</h5>
+                        <p class="font-14 text-secondary-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolore, porro rem quod illo quam,
+                            eum alias id, repellendus magni, quas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs End -->
+    <!-- Contact Start -->
+    <section class="contact offcanvas offcanvas-bottom vh-100 bg-black overflow-y-scroll" id="offcanvas-contact"
+        data-bs-theme="dark">
+        <div class="container">
+            <div class="offcanvas-header position-fixed top-0 end-0">
+                <button type="button" class="btn-close fs-3 me-5 mt-4" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="text-center mt-5 mb-5">
+                <span class="fs-6 text-secondary-emphasis ">Feel Free To Contact Me Anytime</span>
+                <h2 class="fs-1 fw-bold pt-3">Contact</h2>
+            </div>
+            <div class="mt-5 pt-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Message Me</h4>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text"
+                                        class="form-control bg-form border-0 rounded-1 shadow-none text-secondary-emphasis font-14 p-2"
+                                        placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email"
+                                        class="form-control bg-form border-0 rounded-1 shadow-none text-secondary font-14 p-2"
+                                        placeholder="Email" required>
+                                </div>
+                            </div>
+                            <input type="text"
+                                class="form-control bg-form border-0 rounded-1 shadow-none text-secondary-emphasis font-14 p-2 mt-4"
+                                placeholder="Subject" required>
+                            <textarea rows="5"
+                                class="form-control bg-form border-0 rounded-1 shadow-none text-secondary-emphasis font-14 p-2 mt-4"
+                                placeholder="Message" required></textarea>
+                            <button type="submit" value="submit"
+                                class="btn btn-success py-2 px-4 rounded-pill font-14 mt-3 fw-light">Send
+                                Message</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="mt-lg-0 mt-5">Contact Info</h4>
+                        <p class="text-secondary-emphasis fs-6 mb-4">
+                            Always available for freelance work if the right project comes along, Feel free to contact
+                            me!
+                        </p>
+                        <div class="d-flex f-wrap align-items-center ">
+                            <div class="border-2 border-end border-secondary pe-3 fs-2 text-success">
+                                <iconify-icon icon="simple-icons:ionic"></iconify-icon>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="mb-1 fw-semibold">Name</h6>
+                                <span class="text-secondary-emphasis font-14">Vrushank Gotawala</span>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-items-center">
+                            <div class="border-2 border-end border-secondary pe-3 fs-2 text-success pt-3">
+                                <iconify-icon icon="material-symbols-light:map"></iconify-icon>
+                            </div>
+                            <div class="ms-3 pt-3">
+                                <h6 class="mb-1 fw-semibold ">Location</h6>
+                                <span class="text-secondary-emphasis font-14">Surat, India</span>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-items-center">
+                            <div class="border-2 border-end border-secondary pe-3 fs-2 text-success pt-3">
+                                <iconify-icon icon="material-symbols:call"></iconify-icon>
+                            </div>
+                            <div class="ms-3 pt-3">
+                                <h6 class="mb-1 fw-semibold ">Call Me</h6>
+                                <span class="text-secondary-emphasis font-14">+91 98765 43210</span>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-items-center mb-5 mb-lg-0">
+                            <div class="border-2 border-end border-secondary pe-3 fs-2 text-success pt-3">
+                                <iconify-icon icon="ic:round-send"></iconify-icon>
+                            </div>
+                            <div class="ms-3 pt-3">
+                                <h6 class="mb-1 fw-semibold ">Email Me</h6>
+                                <span class="text-secondary-emphasis font-14">vrushankgotawala@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+    <!-- Iconify-Icon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Particle JS -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
